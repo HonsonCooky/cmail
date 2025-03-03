@@ -34,6 +34,9 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 
 all: $(TARGET)
 
+run: all
+	./$(TARGET)
+
 # Rule to clean the build files
 .PHONY: clean
 clean:
